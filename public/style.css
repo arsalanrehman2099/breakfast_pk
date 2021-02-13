@@ -1,0 +1,786 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  .header h1 {
+    width: 25%;
+    display: inline-block;
+    font-size: 2em;
+    font-family: "Pacifico", cursive;
+  }
+  
+  .header ul {
+    width: 75%;
+    text-align: right;
+    display: inline-block;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header ul li {
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 25px;
+    width: 100%;
+  }
+  
+  .footer span {
+    font-family: "Pacifico", cursive;
+  }
+  
+  .logo {
+    font-family: "Pacifico", cursive;
+  }
+  
+  .each-slide > div {
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 550px;
+  }
+  
+  .home-hr {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .home-product-list-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  
+  .heading {
+    padding: 30px;
+  }
+  
+  .heading .text,
+  .heading .btn {
+    display: inline-block;
+    width: 50%;
+  }
+  
+  .heading .text {
+    text-align: left;
+  }
+  
+  .heading .btn {
+    text-align: right;
+  }
+  
+  .heading h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    color: black;
+    opacity: 0.7;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  
+  .heading button {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 8px 10px;
+    margin-right: 25px;
+  }
+  .product-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .product-container-img {
+    overflow: hidden;
+  }
+  .product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 2px;
+    transition: 1s;
+    vertical-align: middle;
+  }
+  
+  .product-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-container-title {
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .product-container-title .name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .product-container-title .qty {
+    position: relative;
+    left: 10;
+  }
+  
+  .product-container-price {
+    margin-top: 5px;
+    text-align: left;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .product-container button {
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    padding: 05px 0;
+    border: none;
+    outline: none;
+  }
+  
+  .home-deals {
+    padding: 10px 60px;
+    margin-bottom: 55px;
+  }
+  
+  .home-deals-daily {
+    display: inline-block;
+    width: 34%;
+    height: 300px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./images/deals/6.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 25px;
+    margin-right: 1%;
+    cursor: pointer;
+  }
+  
+  .home-deals-weekly {
+    display: inline-block;
+    width: 65%;
+    height: 300px;
+    background-color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./images/deals/1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .home-deals-monthly {
+    margin-top: 0.8%;
+    border-radius: 25px;
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(./images/deals/3.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .home-deals-daily,
+  .home-deals-weekly,
+  .home-deals-monthly {
+    color: white;
+  }
+  
+  .home-deals-daily .heading,
+  .home-deals-weekly .heading,
+  .home-deals-monthly .heading {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .page-header h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+    color: black;
+    padding: 35px 25px 10px 25px;
+    font-size: 25px;
+  }
+  
+  .page-header hr {
+    margin: auto 25px;
+    margin-bottom: 20px;
+  }
+  
+  .product-page .products {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  
+  .deal {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .deal-container {
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+    color: white;
+    padding: 25px;
+  }
+  
+  .deal-container p {
+    float: left;
+  }
+  
+  .deal-container hr {
+    display: inline-block;
+    width: 95%;
+  }
+  .deal-container-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .deal-container-desc {
+    margin-top: 10px;
+  }
+  
+  .deal-container-price {
+    margin-top: 20px;
+    float: right;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .deal-container button {
+    float: left;
+    width: 100%;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  .deal-container button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .qty-container {
+    text-align: center;
+  }
+  .qty-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .qty-container .name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+  }
+  
+  .qty-container .qty {
+    text-align: center;
+  }
+  
+  .qty-container hr {
+    margin: 10px;
+  }
+  
+  .qty-container .price {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .qty-container .qty-inp {
+    text-align: center;
+  }
+  
+  .qty-container .qty-inp button {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background: white;
+    color: gray;
+    outline: none;
+    border: 0.5px gray solid;
+    cursor: pointer;
+  }
+  
+  .qty-container .qty-inp button:hover {
+    background-color: black;
+    opacity: 0.95;
+    color: white;
+  }
+  
+  .qty-container .qty-inp p {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .qty-container .add-to-cart {
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+  }
+  
+  .qty-container .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+  }
+  
+  .cart-list-container {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .cart-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .cart-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .cart-container img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-container .qty-div p {
+    display: inline-block;
+  }
+  
+  .cart-container .name {
+    font-weight: bolder;
+  }
+  
+  .cart-container .price {
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .cart-container .qty-div button {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background: white;
+    color: gray;
+    outline: none;
+    border: 0.5px gray solid;
+    cursor: pointer;
+  }
+  
+  .cart-container .qty-div button:hover {
+    background-color: black;
+    opacity: 0.95;
+    color: white;
+  }
+  
+  .cart-container .qty-div .remove-cart:hover {
+    background-color: red;
+  }
+  
+  .empty-cart-container {
+    height: 550px;
+    text-align: center;
+  }
+  
+  .empty-cart-container img {
+    height: 200px;
+    width: 200px;
+    margin-top: 80px;
+  }
+  
+  .empty-cart-container p {
+    font-size: 2em;
+    margin-top: 20px;
+    padding-left: 35px;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .cart-amt-container {
+    padding: 25px 35px;
+    text-align: right;
+  }
+  
+  .cart-amt-container p {
+    margin-top: 10px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .cart-amt-container span {
+    font-size: 1.5em;
+  }
+  
+  .cart-amt-container button {
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+  }
+  
+  .abt-us-container .detail {
+    margin-bottom: 85px;
+    padding: 0 25px;
+  }
+  .ceo-heading,
+  .team-heading {
+    margin: 25px 0;
+    text-align: center;
+  }
+  .ceo-container {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 45px;
+    padding-top: 25px;
+  }
+  
+  .ceo-bio {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ceo-bio:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .ceo-bio img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: url(images/members/ceo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: 1s;
+    vertical-align: middle;
+  }
+  
+  .ceo-bio img:hover {
+    transform: scale(1.1);
+  }
+  
+  .ceo-bio h4 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .ceo-bio p {
+    font-size: 14px;
+  }
+  .ceo-msg {
+    width: 70%;
+    display: inline-block;
+    padding-left: 35px;
+    padding-bottom: 15px;
+  }
+  .team-container {
+    text-align: center;
+  }
+  .team-item-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .team-item-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .team-item-container div {
+    overflow: hidden;
+  }
+  .team-item-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 2px;
+    transition: 1s;
+    vertical-align: middle;
+  }
+  
+  .team-item-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .team-item-container h3 {
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .team-item-container p {
+    font-size: 14px;
+  }
+  
+  .order-container {
+    padding: 10px 80px;
+    margin-bottom: 80px;
+  }
+  
+  .order-container label {
+    display: inline-block;
+    margin: auto;
+    width: 20%;
+  }
+  
+  .order-container form div {
+    margin-bottom: 15px;
+  }
+  
+  .order-container input {
+    margin: 5px auto;
+    display: inline-block;
+    width: 80%;
+    outline: none;
+    border: 1px grey solid;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .order-container textarea {
+    height: 180px;
+    margin: 5px auto;
+    display: inline-block;
+    width: 80%;
+    outline: none;
+    border: 1px grey solid;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .order-container button {
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    margin: 20px 80px;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    right: 0;
+    position: absolute;
+  }
+  
+  .order-submit-container {
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+  }
+  
+  .order-submit-container div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .order-submit-container img {
+    margin-top: 55px;
+  }
+  
+  .order-submit-container p {
+    padding-left: 15px;
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #29b473;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .order-submit-container button {
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    background: #29b473;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    padding: 10px 15px;
+  }
+  
+  
+  .order-submit-container button:hover {
+    color: black;
+    border: 1px solid black;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .header h1,
+    .header ul {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .header ul {
+      margin-top: 10px;
+    }
+  
+    .each-slide > div {
+      height: 350px;
+    }
+    .home-deals-daily,
+    .home-deals-weekly {
+      height: 200px;
+      margin-bottom: 2px;
+    }
+  
+    .home-deals-monthly {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 950px) {
+    .home-deals-daily,
+    .home-deals-weekly {
+      height: 180px;
+      margin-bottom: 5px;
+    }
+  
+    .home-deals-monthly {
+      height: 300px;
+    }
+  
+    .ceo-bio {
+      width: 100%;
+    }
+  
+    .ceo-msg {
+      width: 100%;
+      margin-top: 25px;
+    }
+  
+    .order-container label {
+      width: 100%;
+    }
+    .order-container input {
+      width: 100%;
+    }
+  
+    .order-container textarea {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .home-deals-daily,
+    .home-deals-weekly {
+      height: 200px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .home-deals-monthly {
+      height: 200px;
+    }
+  
+    .ceo-msg {
+      text-align: center;
+    }
+  
+    .order-container {
+      padding: 10px 30px;
+    }
+  
+    .order-container button {
+      margin: 20px 30px;
+    }
+  
+    .order-submit-container img {
+      margin-top: 55px;
+    }
+  }
+  
